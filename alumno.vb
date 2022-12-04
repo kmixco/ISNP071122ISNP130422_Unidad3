@@ -109,7 +109,7 @@
                            ByVal correoA As String
                            )
 
-        datosCompletos = False
+        datosCompletos = True
 
         If codigoA.Length = 0 Then
             MsgBox("Debe generar el codigo")
@@ -123,10 +123,10 @@
             nombre = nombreA
         End If
 
-        If nombreA.Length = 0 Then
+        If apellidoA.Length = 0 Then
             MsgBox("Debe agregar el apellido")
         Else
-            nombre = apellidoA
+            apellido = apellidoA
         End If
 
         If generoA.Length = 0 Then

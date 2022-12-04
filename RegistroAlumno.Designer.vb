@@ -44,6 +44,14 @@ Partial Class RegistroAlumno
         Me.lbApellido = New System.Windows.Forms.Label()
         Me.lbNombre = New System.Windows.Forms.Label()
         Me.lbRegistro = New System.Windows.Forms.Label()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.grpCodigo.SuspendLayout()
         CType(Me.VerDatos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grpDatos.SuspendLayout()
@@ -90,6 +98,7 @@ Partial Class RegistroAlumno
         'VerDatos
         '
         Me.VerDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.VerDatos.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6, Me.Column7, Me.Column8})
         Me.VerDatos.Location = New System.Drawing.Point(22, 353)
         Me.VerDatos.Name = "VerDatos"
         Me.VerDatos.RowHeadersWidth = 51
@@ -242,11 +251,67 @@ Partial Class RegistroAlumno
         Me.lbRegistro.TabIndex = 3
         Me.lbRegistro.Text = "REGISTRO DE ALUMNOS"
         '
+        'Column1
+        '
+        Me.Column1.HeaderText = "Codigo"
+        Me.Column1.MinimumWidth = 6
+        Me.Column1.Name = "Column1"
+        Me.Column1.Width = 125
+        '
+        'Column2
+        '
+        Me.Column2.HeaderText = "Nombre"
+        Me.Column2.MinimumWidth = 6
+        Me.Column2.Name = "Column2"
+        Me.Column2.Width = 125
+        '
+        'Column3
+        '
+        Me.Column3.HeaderText = "Apellido"
+        Me.Column3.MinimumWidth = 6
+        Me.Column3.Name = "Column3"
+        Me.Column3.Width = 125
+        '
+        'Column4
+        '
+        Me.Column4.HeaderText = "Genero"
+        Me.Column4.MinimumWidth = 6
+        Me.Column4.Name = "Column4"
+        Me.Column4.Width = 125
+        '
+        'Column5
+        '
+        Me.Column5.HeaderText = "Direccion"
+        Me.Column5.MinimumWidth = 6
+        Me.Column5.Name = "Column5"
+        Me.Column5.Width = 125
+        '
+        'Column6
+        '
+        Me.Column6.HeaderText = "DUI"
+        Me.Column6.MinimumWidth = 6
+        Me.Column6.Name = "Column6"
+        Me.Column6.Width = 125
+        '
+        'Column7
+        '
+        Me.Column7.HeaderText = "Correo"
+        Me.Column7.MinimumWidth = 6
+        Me.Column7.Name = "Column7"
+        Me.Column7.Width = 125
+        '
+        'Column8
+        '
+        Me.Column8.HeaderText = "Edad"
+        Me.Column8.MinimumWidth = 6
+        Me.Column8.Name = "Column8"
+        Me.Column8.Width = 125
+        '
         'RegistroAlumno
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 588)
+        Me.ClientSize = New System.Drawing.Size(777, 588)
         Me.Controls.Add(Me.lbRegistro)
         Me.Controls.Add(Me.grpDatos)
         Me.Controls.Add(Me.VerDatos)
@@ -285,4 +350,12 @@ Partial Class RegistroAlumno
     Friend WithEvents txtGenero As TextBox
     Friend WithEvents txtApellido As TextBox
     Friend WithEvents lbRegistro As Label
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents Column4 As DataGridViewTextBoxColumn
+    Friend WithEvents Column5 As DataGridViewTextBoxColumn
+    Friend WithEvents Column6 As DataGridViewTextBoxColumn
+    Friend WithEvents Column7 As DataGridViewTextBoxColumn
+    Friend WithEvents Column8 As DataGridViewTextBoxColumn
 End Class
