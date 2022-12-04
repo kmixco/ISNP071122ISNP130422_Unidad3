@@ -132,6 +132,7 @@ Partial Class RegistroAlumno
         'txtDui
         '
         Me.txtDui.Location = New System.Drawing.Point(463, 35)
+        Me.txtDui.MaxLength = 10
         Me.txtDui.Name = "txtDui"
         Me.txtDui.Size = New System.Drawing.Size(130, 22)
         Me.txtDui.TabIndex = 13

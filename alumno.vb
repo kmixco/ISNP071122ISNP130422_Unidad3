@@ -109,7 +109,7 @@
                            ByVal correoA As String
                            )
 
-        datosCompletos = True
+        datosCompletos = False
 
         If codigoA.Length = 0 Then
             MsgBox("Debe generar el codigo")
@@ -158,6 +158,7 @@
         Else
             correo = correoA
         End If
+
 
     End Sub
 
