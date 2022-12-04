@@ -22,13 +22,13 @@ Partial Class RegistroAlumno
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.GenerarCodigo = New System.Windows.Forms.GroupBox()
         Me.btnAgregar = New System.Windows.Forms.Button()
         Me.btnGenerar = New System.Windows.Forms.Button()
         Me.txtCodigo = New System.Windows.Forms.TextBox()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.VerDatos = New System.Windows.Forms.DataGridView()
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.DatosAlumno = New System.Windows.Forms.GroupBox()
         Me.txtDui = New System.Windows.Forms.TextBox()
         Me.txtEdad = New System.Windows.Forms.TextBox()
         Me.txtCorreo = New System.Windows.Forms.TextBox()
@@ -43,26 +43,27 @@ Partial Class RegistroAlumno
         Me.lbDui = New System.Windows.Forms.Label()
         Me.lbApellido = New System.Windows.Forms.Label()
         Me.lbNombre = New System.Windows.Forms.Label()
-        Me.GroupBox1.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox2.SuspendLayout()
+        Me.lbRegistro = New System.Windows.Forms.Label()
+        Me.GenerarCodigo.SuspendLayout()
+        CType(Me.VerDatos, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.DatosAlumno.SuspendLayout()
         Me.SuspendLayout()
         '
-        'GroupBox1
+        'GenerarCodigo
         '
-        Me.GroupBox1.Controls.Add(Me.btnAgregar)
-        Me.GroupBox1.Controls.Add(Me.btnGenerar)
-        Me.GroupBox1.Controls.Add(Me.txtCodigo)
-        Me.GroupBox1.Location = New System.Drawing.Point(37, 12)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(751, 83)
-        Me.GroupBox1.TabIndex = 0
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Generar Codigo"
+        Me.GenerarCodigo.Controls.Add(Me.btnAgregar)
+        Me.GenerarCodigo.Controls.Add(Me.btnGenerar)
+        Me.GenerarCodigo.Controls.Add(Me.txtCodigo)
+        Me.GenerarCodigo.Location = New System.Drawing.Point(22, 70)
+        Me.GenerarCodigo.Name = "GenerarCodigo"
+        Me.GenerarCodigo.Size = New System.Drawing.Size(751, 83)
+        Me.GenerarCodigo.TabIndex = 0
+        Me.GenerarCodigo.TabStop = False
+        Me.GenerarCodigo.Text = "Generar Codigo"
         '
         'btnAgregar
         '
-        Me.btnAgregar.Location = New System.Drawing.Point(541, 32)
+        Me.btnAgregar.Location = New System.Drawing.Point(513, 30)
         Me.btnAgregar.Name = "btnAgregar"
         Me.btnAgregar.Size = New System.Drawing.Size(149, 26)
         Me.btnAgregar.TabIndex = 4
@@ -86,38 +87,38 @@ Partial Class RegistroAlumno
         Me.txtCodigo.Size = New System.Drawing.Size(167, 22)
         Me.txtCodigo.TabIndex = 2
         '
-        'DataGridView1
+        'VerDatos
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(37, 295)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(751, 143)
-        Me.DataGridView1.TabIndex = 1
+        Me.VerDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.VerDatos.Location = New System.Drawing.Point(22, 353)
+        Me.VerDatos.Name = "VerDatos"
+        Me.VerDatos.RowHeadersWidth = 51
+        Me.VerDatos.RowTemplate.Height = 24
+        Me.VerDatos.Size = New System.Drawing.Size(751, 223)
+        Me.VerDatos.TabIndex = 1
         '
-        'GroupBox2
+        'DatosAlumno
         '
-        Me.GroupBox2.Controls.Add(Me.txtDui)
-        Me.GroupBox2.Controls.Add(Me.txtEdad)
-        Me.GroupBox2.Controls.Add(Me.txtCorreo)
-        Me.GroupBox2.Controls.Add(Me.txtDireccion)
-        Me.GroupBox2.Controls.Add(Me.txtGenero)
-        Me.GroupBox2.Controls.Add(Me.txtApellido)
-        Me.GroupBox2.Controls.Add(Me.txtNombre)
-        Me.GroupBox2.Controls.Add(Me.Label4)
-        Me.GroupBox2.Controls.Add(Me.Label3)
-        Me.GroupBox2.Controls.Add(Me.Label2)
-        Me.GroupBox2.Controls.Add(Me.Label1)
-        Me.GroupBox2.Controls.Add(Me.lbDui)
-        Me.GroupBox2.Controls.Add(Me.lbApellido)
-        Me.GroupBox2.Controls.Add(Me.lbNombre)
-        Me.GroupBox2.Location = New System.Drawing.Point(37, 101)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(751, 188)
-        Me.GroupBox2.TabIndex = 2
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Datos de Alumno"
+        Me.DatosAlumno.Controls.Add(Me.txtDui)
+        Me.DatosAlumno.Controls.Add(Me.txtEdad)
+        Me.DatosAlumno.Controls.Add(Me.txtCorreo)
+        Me.DatosAlumno.Controls.Add(Me.txtDireccion)
+        Me.DatosAlumno.Controls.Add(Me.txtGenero)
+        Me.DatosAlumno.Controls.Add(Me.txtApellido)
+        Me.DatosAlumno.Controls.Add(Me.txtNombre)
+        Me.DatosAlumno.Controls.Add(Me.Label4)
+        Me.DatosAlumno.Controls.Add(Me.Label3)
+        Me.DatosAlumno.Controls.Add(Me.Label2)
+        Me.DatosAlumno.Controls.Add(Me.Label1)
+        Me.DatosAlumno.Controls.Add(Me.lbDui)
+        Me.DatosAlumno.Controls.Add(Me.lbApellido)
+        Me.DatosAlumno.Controls.Add(Me.lbNombre)
+        Me.DatosAlumno.Location = New System.Drawing.Point(22, 159)
+        Me.DatosAlumno.Name = "DatosAlumno"
+        Me.DatosAlumno.Size = New System.Drawing.Size(751, 188)
+        Me.DatosAlumno.TabIndex = 2
+        Me.DatosAlumno.TabStop = False
+        Me.DatosAlumno.Text = "Datos de Alumno"
         '
         'txtDui
         '
@@ -231,32 +232,44 @@ Partial Class RegistroAlumno
         Me.lbNombre.TabIndex = 0
         Me.lbNombre.Text = "Nombre"
         '
+        'lbRegistro
+        '
+        Me.lbRegistro.AutoSize = True
+        Me.lbRegistro.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbRegistro.Location = New System.Drawing.Point(223, 21)
+        Me.lbRegistro.Name = "lbRegistro"
+        Me.lbRegistro.Size = New System.Drawing.Size(334, 29)
+        Me.lbRegistro.TabIndex = 3
+        Me.lbRegistro.Text = "REGISTRO DE ALUMNOS"
+        '
         'RegistroAlumno
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.GroupBox2)
-        Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.GroupBox1)
+        Me.ClientSize = New System.Drawing.Size(800, 588)
+        Me.Controls.Add(Me.lbRegistro)
+        Me.Controls.Add(Me.DatosAlumno)
+        Me.Controls.Add(Me.VerDatos)
+        Me.Controls.Add(Me.GenerarCodigo)
         Me.Name = "RegistroAlumno"
-        Me.Text = "Form1"
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
+        Me.Text = "Registro de Alumno"
+        Me.GenerarCodigo.ResumeLayout(False)
+        Me.GenerarCodigo.PerformLayout()
+        CType(Me.VerDatos, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.DatosAlumno.ResumeLayout(False)
+        Me.DatosAlumno.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents GenerarCodigo As GroupBox
+    Friend WithEvents VerDatos As DataGridView
     Friend WithEvents btnGenerar As Button
     Friend WithEvents txtCodigo As TextBox
     Friend WithEvents btnAgregar As Button
     Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
-    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents DatosAlumno As GroupBox
     Friend WithEvents lbDui As Label
     Friend WithEvents lbApellido As Label
     Friend WithEvents lbNombre As Label
@@ -271,4 +284,5 @@ Partial Class RegistroAlumno
     Friend WithEvents txtDireccion As TextBox
     Friend WithEvents txtGenero As TextBox
     Friend WithEvents txtApellido As TextBox
+    Friend WithEvents lbRegistro As Label
 End Class

@@ -1,7 +1,7 @@
 ﻿Public Class RegistroAlumno
     Dim alumno As New alumno
 
-    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GenerarCodigo.Enter
 
     End Sub
 
@@ -39,6 +39,14 @@
     End Sub
 
     Private Sub txtCodigo_TextChanged(sender As Object, e As EventArgs) Handles txtCodigo.TextChanged
+
+    End Sub
+
+    Private Sub VerDatos_Validating(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles VerDatos.Validating
+
+    End Sub
+
+    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles lbRegistro.Click
 
     End Sub
 End Class

@@ -102,6 +102,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="RegistroAuto.Designer.vb">
+      <DependentUpon>RegistroAuto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroAuto.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Acercade.resx">
