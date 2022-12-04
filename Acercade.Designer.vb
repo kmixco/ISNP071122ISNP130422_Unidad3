@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class AboutBox1
+Partial Class Acercade
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -31,7 +31,7 @@ Partial Class AboutBox1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AboutBox1))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Acercade))
         Me.TableLayoutPanel = New System.Windows.Forms.TableLayoutPanel()
         Me.LogoPictureBox = New System.Windows.Forms.PictureBox()
         Me.LabelProductName = New System.Windows.Forms.Label()
@@ -58,7 +58,7 @@ Partial Class AboutBox1
         Me.TableLayoutPanel.Controls.Add(Me.OKButton, 1, 5)
         Me.TableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel.Location = New System.Drawing.Point(12, 11)
-        Me.TableLayoutPanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TableLayoutPanel.Margin = New System.Windows.Forms.Padding(4)
         Me.TableLayoutPanel.Name = "TableLayoutPanel"
         Me.TableLayoutPanel.RowCount = 6
         Me.TableLayoutPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
@@ -75,7 +75,7 @@ Partial Class AboutBox1
         Me.LogoPictureBox.Dock = System.Windows.Forms.DockStyle.Fill
         Me.LogoPictureBox.Image = CType(resources.GetObject("LogoPictureBox.Image"), System.Drawing.Image)
         Me.LogoPictureBox.Location = New System.Drawing.Point(4, 4)
-        Me.LogoPictureBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.LogoPictureBox.Margin = New System.Windows.Forms.Padding(4)
         Me.LogoPictureBox.Name = "LogoPictureBox"
         Me.TableLayoutPanel.SetRowSpan(Me.LogoPictureBox, 6)
         Me.LogoPictureBox.Size = New System.Drawing.Size(166, 310)
@@ -150,13 +150,13 @@ Partial Class AboutBox1
         Me.OKButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.OKButton.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.OKButton.Location = New System.Drawing.Point(424, 287)
-        Me.OKButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.OKButton.Margin = New System.Windows.Forms.Padding(4)
         Me.OKButton.Name = "OKButton"
         Me.OKButton.Size = New System.Drawing.Size(100, 27)
         Me.OKButton.TabIndex = 0
         Me.OKButton.Text = "&Aceptar"
         '
-        'AboutBox1
+        'Acercade
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -164,14 +164,14 @@ Partial Class AboutBox1
         Me.ClientSize = New System.Drawing.Size(552, 340)
         Me.Controls.Add(Me.TableLayoutPanel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
-        Me.Name = "AboutBox1"
+        Me.Name = "Acercade"
         Me.Padding = New System.Windows.Forms.Padding(12, 11, 12, 11)
         Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
-        Me.Text = "AboutBox1"
+        Me.Text = "Acerca de"
         Me.TableLayoutPanel.ResumeLayout(False)
         Me.TableLayoutPanel.PerformLayout()
         CType(Me.LogoPictureBox, System.ComponentModel.ISupportInitialize).EndInit()

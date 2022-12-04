@@ -73,10 +73,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AboutBox1.Designer.vb">
-      <DependentUpon>AboutBox1.vb</DependentUpon>
+    <Compile Include="Acercade.Designer.vb">
+      <DependentUpon>Acercade.vb</DependentUpon>
     </Compile>
-    <Compile Include="AboutBox1.vb">
+    <Compile Include="Acercade.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="alumno.vb" />
@@ -104,8 +104,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="AboutBox1.resx">
-      <DependentUpon>AboutBox1.vb</DependentUpon>
+    <EmbeddedResource Include="Acercade.resx">
+      <DependentUpon>Acercade.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegistroAlumno.resx">
       <DependentUpon>RegistroAlumno.vb</DependentUpon>

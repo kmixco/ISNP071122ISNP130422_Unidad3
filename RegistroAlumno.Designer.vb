@@ -53,7 +53,7 @@ Partial Class RegistroAlumno
         Me.GroupBox1.Controls.Add(Me.btnAgregar)
         Me.GroupBox1.Controls.Add(Me.btnGenerar)
         Me.GroupBox1.Controls.Add(Me.txtCodigo)
-        Me.GroupBox1.Location = New System.Drawing.Point(37, 24)
+        Me.GroupBox1.Location = New System.Drawing.Point(37, 12)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(751, 83)
         Me.GroupBox1.TabIndex = 0
@@ -89,11 +89,11 @@ Partial Class RegistroAlumno
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(37, 332)
+        Me.DataGridView1.Location = New System.Drawing.Point(37, 295)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(751, 106)
+        Me.DataGridView1.Size = New System.Drawing.Size(751, 143)
         Me.DataGridView1.TabIndex = 1
         '
         'GroupBox2
@@ -112,7 +112,7 @@ Partial Class RegistroAlumno
         Me.GroupBox2.Controls.Add(Me.lbDui)
         Me.GroupBox2.Controls.Add(Me.lbApellido)
         Me.GroupBox2.Controls.Add(Me.lbNombre)
-        Me.GroupBox2.Location = New System.Drawing.Point(37, 130)
+        Me.GroupBox2.Location = New System.Drawing.Point(37, 101)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(751, 188)
         Me.GroupBox2.TabIndex = 2
