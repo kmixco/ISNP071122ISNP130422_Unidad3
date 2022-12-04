@@ -22,13 +22,13 @@ Partial Class RegistroAlumno
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.GenerarCodigo = New System.Windows.Forms.GroupBox()
+        Me.grpCodigo = New System.Windows.Forms.GroupBox()
         Me.btnAgregar = New System.Windows.Forms.Button()
         Me.btnGenerar = New System.Windows.Forms.Button()
         Me.txtCodigo = New System.Windows.Forms.TextBox()
         Me.VerDatos = New System.Windows.Forms.DataGridView()
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
-        Me.DatosAlumno = New System.Windows.Forms.GroupBox()
+        Me.grpDatos = New System.Windows.Forms.GroupBox()
         Me.txtDui = New System.Windows.Forms.TextBox()
         Me.txtEdad = New System.Windows.Forms.TextBox()
         Me.txtCorreo = New System.Windows.Forms.TextBox()
@@ -44,22 +44,22 @@ Partial Class RegistroAlumno
         Me.lbApellido = New System.Windows.Forms.Label()
         Me.lbNombre = New System.Windows.Forms.Label()
         Me.lbRegistro = New System.Windows.Forms.Label()
-        Me.GenerarCodigo.SuspendLayout()
+        Me.grpCodigo.SuspendLayout()
         CType(Me.VerDatos, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.DatosAlumno.SuspendLayout()
+        Me.grpDatos.SuspendLayout()
         Me.SuspendLayout()
         '
-        'GenerarCodigo
+        'grpCodigo
         '
-        Me.GenerarCodigo.Controls.Add(Me.btnAgregar)
-        Me.GenerarCodigo.Controls.Add(Me.btnGenerar)
-        Me.GenerarCodigo.Controls.Add(Me.txtCodigo)
-        Me.GenerarCodigo.Location = New System.Drawing.Point(22, 70)
-        Me.GenerarCodigo.Name = "GenerarCodigo"
-        Me.GenerarCodigo.Size = New System.Drawing.Size(751, 83)
-        Me.GenerarCodigo.TabIndex = 0
-        Me.GenerarCodigo.TabStop = False
-        Me.GenerarCodigo.Text = "Generar Codigo"
+        Me.grpCodigo.Controls.Add(Me.btnAgregar)
+        Me.grpCodigo.Controls.Add(Me.btnGenerar)
+        Me.grpCodigo.Controls.Add(Me.txtCodigo)
+        Me.grpCodigo.Location = New System.Drawing.Point(22, 70)
+        Me.grpCodigo.Name = "grpCodigo"
+        Me.grpCodigo.Size = New System.Drawing.Size(751, 83)
+        Me.grpCodigo.TabIndex = 0
+        Me.grpCodigo.TabStop = False
+        Me.grpCodigo.Text = "Generar Codigo"
         '
         'btnAgregar
         '
@@ -97,28 +97,28 @@ Partial Class RegistroAlumno
         Me.VerDatos.Size = New System.Drawing.Size(751, 223)
         Me.VerDatos.TabIndex = 1
         '
-        'DatosAlumno
+        'grpDatos
         '
-        Me.DatosAlumno.Controls.Add(Me.txtDui)
-        Me.DatosAlumno.Controls.Add(Me.txtEdad)
-        Me.DatosAlumno.Controls.Add(Me.txtCorreo)
-        Me.DatosAlumno.Controls.Add(Me.txtDireccion)
-        Me.DatosAlumno.Controls.Add(Me.txtGenero)
-        Me.DatosAlumno.Controls.Add(Me.txtApellido)
-        Me.DatosAlumno.Controls.Add(Me.txtNombre)
-        Me.DatosAlumno.Controls.Add(Me.Label4)
-        Me.DatosAlumno.Controls.Add(Me.Label3)
-        Me.DatosAlumno.Controls.Add(Me.Label2)
-        Me.DatosAlumno.Controls.Add(Me.Label1)
-        Me.DatosAlumno.Controls.Add(Me.lbDui)
-        Me.DatosAlumno.Controls.Add(Me.lbApellido)
-        Me.DatosAlumno.Controls.Add(Me.lbNombre)
-        Me.DatosAlumno.Location = New System.Drawing.Point(22, 159)
-        Me.DatosAlumno.Name = "DatosAlumno"
-        Me.DatosAlumno.Size = New System.Drawing.Size(751, 188)
-        Me.DatosAlumno.TabIndex = 2
-        Me.DatosAlumno.TabStop = False
-        Me.DatosAlumno.Text = "Datos de Alumno"
+        Me.grpDatos.Controls.Add(Me.txtDui)
+        Me.grpDatos.Controls.Add(Me.txtEdad)
+        Me.grpDatos.Controls.Add(Me.txtCorreo)
+        Me.grpDatos.Controls.Add(Me.txtDireccion)
+        Me.grpDatos.Controls.Add(Me.txtGenero)
+        Me.grpDatos.Controls.Add(Me.txtApellido)
+        Me.grpDatos.Controls.Add(Me.txtNombre)
+        Me.grpDatos.Controls.Add(Me.Label4)
+        Me.grpDatos.Controls.Add(Me.Label3)
+        Me.grpDatos.Controls.Add(Me.Label2)
+        Me.grpDatos.Controls.Add(Me.Label1)
+        Me.grpDatos.Controls.Add(Me.lbDui)
+        Me.grpDatos.Controls.Add(Me.lbApellido)
+        Me.grpDatos.Controls.Add(Me.lbNombre)
+        Me.grpDatos.Location = New System.Drawing.Point(22, 159)
+        Me.grpDatos.Name = "grpDatos"
+        Me.grpDatos.Size = New System.Drawing.Size(751, 188)
+        Me.grpDatos.TabIndex = 2
+        Me.grpDatos.TabStop = False
+        Me.grpDatos.Text = "Datos de Alumno"
         '
         'txtDui
         '
@@ -248,28 +248,28 @@ Partial Class RegistroAlumno
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 588)
         Me.Controls.Add(Me.lbRegistro)
-        Me.Controls.Add(Me.DatosAlumno)
+        Me.Controls.Add(Me.grpDatos)
         Me.Controls.Add(Me.VerDatos)
-        Me.Controls.Add(Me.GenerarCodigo)
+        Me.Controls.Add(Me.grpCodigo)
         Me.Name = "RegistroAlumno"
         Me.Text = "Registro de Alumno"
-        Me.GenerarCodigo.ResumeLayout(False)
-        Me.GenerarCodigo.PerformLayout()
+        Me.grpCodigo.ResumeLayout(False)
+        Me.grpCodigo.PerformLayout()
         CType(Me.VerDatos, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.DatosAlumno.ResumeLayout(False)
-        Me.DatosAlumno.PerformLayout()
+        Me.grpDatos.ResumeLayout(False)
+        Me.grpDatos.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents GenerarCodigo As GroupBox
+    Friend WithEvents grpCodigo As GroupBox
     Friend WithEvents VerDatos As DataGridView
     Friend WithEvents btnGenerar As Button
     Friend WithEvents txtCodigo As TextBox
     Friend WithEvents btnAgregar As Button
     Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
-    Friend WithEvents DatosAlumno As GroupBox
+    Friend WithEvents grpDatos As GroupBox
     Friend WithEvents lbDui As Label
     Friend WithEvents lbApellido As Label
     Friend WithEvents lbNombre As Label
