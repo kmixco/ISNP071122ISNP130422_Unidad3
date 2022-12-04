@@ -68,4 +68,7 @@ Public Class RegistroAlumno
 
     End Sub
 
+    Private Sub RegistroAlumno_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
