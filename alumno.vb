@@ -1,4 +1,5 @@
-﻿Public Class alumno
+Imports System.Text.RegularExpressions
+Public Class alumno
 
     'Declaracion de propiedades
     Private codigo As String
@@ -113,52 +114,76 @@
 
         If codigoA.Length = 0 Then
             MsgBox("Debe generar el codigo")
+
         Else
             codigo = codigoA
+            datosCompletos = True
         End If
 
         If nombreA.Length = 0 Then
             MsgBox("Debe agregar el nombre")
         Else
             nombre = nombreA
+            datosCompletos = True
         End If
 
         If apellidoA.Length = 0 Then
             MsgBox("Debe agregar el apellido")
         Else
             apellido = apellidoA
+            datosCompletos = True
         End If
 
         If generoA.Length = 0 Then
-            MsgBox("Debe agregar el genero")
+            MsgBox("Debe agregar el genero, escriba M para masculino o F para femenino")
         Else
             genero = generoA
+            datosCompletos = True
         End If
 
         If direccionA.Length = 0 Then
             MsgBox("Debe agregar el direccion")
         Else
             direccion = direccionA
+            datosCompletos = True
         End If
 
         If duiA.Length = 0 Then
             MsgBox("Debe agregar el dui")
         Else
-            dui = duiA
+            Dim regexDUI As Regex = New Regex("^[^@\s]+-[^@\s]+$")
+            Dim isduivalid As Boolean = regexDUI.IsMatch(duiA.Trim)
+
+            If Not isduivalid Then
+                MsgBox("Debe ingresar un DUI valido, recuerde usar el guion")
+            Else
+                dui = duiA
+                datosCompletos = True
+            End If
+
         End If
 
         If edadA.Length = 0 Then
             MsgBox("Debe agregar el edad")
         Else
             edad = edadA
+            datosCompletos = True
         End If
 
         If correoA.Length = 0 Then
             MsgBox("Debe agregar el correo")
-        Else
-            correo = correoA
-        End If
 
+        Else
+            Dim regex As Regex = New Regex("^[^@\s]+@[^@\s]+\.[^@\s]+$")
+            Dim isvalid As Boolean = regex.IsMatch(correoA.Trim)
+            If Not isvalid Then
+                MsgBox("Debe ingresar un correo valido")
+            Else
+                correo = correoA
+                datosCompletos = True
+            End If
+
+        End If
 
     End Sub
 
