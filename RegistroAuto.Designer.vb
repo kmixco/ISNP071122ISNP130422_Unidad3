@@ -138,6 +138,7 @@ Partial Class RegistroAuto
         'txtAño
         '
         Me.txtAño.Location = New System.Drawing.Point(376, 76)
+        Me.txtAño.MaxLength = 4
         Me.txtAño.Name = "txtAño"
         Me.txtAño.Size = New System.Drawing.Size(69, 20)
         Me.txtAño.TabIndex = 12
@@ -145,6 +146,7 @@ Partial Class RegistroAuto
         'txtVin
         '
         Me.txtVin.Location = New System.Drawing.Point(376, 40)
+        Me.txtVin.MaxLength = 17
         Me.txtVin.Name = "txtVin"
         Me.txtVin.Size = New System.Drawing.Size(209, 20)
         Me.txtVin.TabIndex = 11
