@@ -71,4 +71,20 @@ Public Class RegistroAlumno
     Private Sub RegistroAlumno_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub lbRegistro_Click(sender As Object, e As EventArgs) Handles lbRegistro.Click
+
+    End Sub
+
+    Private Sub txtApellido_TextChanged(sender As Object, e As EventArgs) Handles txtApellido.TextChanged
+
+    End Sub
+
+    Private Sub txtCodigo_TextChanged(sender As Object, e As EventArgs) Handles txtCodigo.TextChanged
+
+    End Sub
+
+    Private Sub VerDatos_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles VerDatos.CellContentClick
+
+    End Sub
 End Class

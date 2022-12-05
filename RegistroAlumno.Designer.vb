@@ -62,7 +62,7 @@ Partial Class RegistroAlumno
         Me.grpCodigo.Controls.Add(Me.btnAgregar)
         Me.grpCodigo.Controls.Add(Me.btnGenerar)
         Me.grpCodigo.Controls.Add(Me.txtCodigo)
-        Me.grpCodigo.Location = New System.Drawing.Point(16, 57)
+        Me.grpCodigo.Location = New System.Drawing.Point(16, 58)
         Me.grpCodigo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.grpCodigo.Name = "grpCodigo"
         Me.grpCodigo.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
@@ -93,6 +93,7 @@ Partial Class RegistroAlumno
         '
         'txtCodigo
         '
+        Me.txtCodigo.BackColor = System.Drawing.SystemColors.Control
         Me.txtCodigo.Location = New System.Drawing.Point(11, 26)
         Me.txtCodigo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtCodigo.Name = "txtCodigo"
